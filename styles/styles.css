@@ -1,0 +1,37 @@
+
+
+@media (min-width: 48em) {
+    html {
+        font-size: 14px !important;
+    } 
+  
+    
+    .container .nav{
+        max-width: 60rem;
+        background-color: #b34848 !important;
+    }
+    .blog-masthead {
+        margin-bottom: 3rem;
+        background-color: #b34848 !important;
+        box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
+    }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color:#b34848 !important;
+}
+a:hover {
+    color: #b34848 !important;
+}
