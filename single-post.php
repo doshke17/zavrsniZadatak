@@ -29,9 +29,16 @@
                 <h2 class="blog-post-title"> <a href = "single-post.php?id=<?php echo($post['id']) ?>"><?php echo ($post["title"])?> </a></h2>
                 <p class="blog-post-meta"><?php echo ($post["created_at"])?> <a href="#"><?php echo ($post["author"])?></a></p>
                 <p><?php echo ($post["body"])?></p>
+                <form action="partials/createComment.php" method="POST">
+                    Name: <input type="text" name="name"> <br>
+                    <input type="hidden" name="postId" value="<?php echo $post['id'] ?>">
+                    <textarea name="comment">Enter text here!!!</textarea>
+                    <input type="submit" name="submit">
+                </form>
+
                 <button id="buttonD" type="button" class="btn btn-default" onclick="myButton()">Hide comments</button>
                 <div id="comments">
-                    <ul>
+                    <ul> 
                         <li class="blog-comments-meta"><?php echo ($post["comment_author"])?></li>
                         <li class="blog-comments-meta"><?php echo ($post["comment_text"])?></li>
                     </ul>
@@ -39,4 +46,4 @@
             </div>
         </div>
     </div>
-</main><!-- /.container -->
+</main>

@@ -19,7 +19,7 @@
                 <ul>
                 <?php foreach ($posts as $post) {         ?> 
                     <li><a href = "single-post.php?post_id=<?php echo($post['id']) ?>"><?php echo($post['title']) ?></a></li>    
-                     <?php             }         ?>
+                     <?php       }      ?>
                 </ul>
             </div>
             
